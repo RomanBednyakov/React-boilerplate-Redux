@@ -1,82 +1,31 @@
 {
-  "name": "react",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "main": "index.js",
-  "author": "Roman Bednyakov <rbednyakov@mentalstack.com>",
-  "scripts": {
-    "start": "webpack-dev-server",
-    "clean": "rimraf dist",
-    "production": "cross-env npm run clean && webpack --config webpack.production.config.js --progress --profile --colors",
-    "lint": "eslint ./app/**/**.js",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "coverage": "jest --coverage"
-  },
-  "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
-    "cross-env": "5.1.6",
-    "font-awesome": "^4.7.0",
-    "history": "^4.7.2",
-    "image-extensions": "^1.1.0",
-    "immutable": "^4.0.0-rc.12",
-    "is-hotkey": "latest",
-    "is-url": "^1.2.4",
-    "lodash": "latest",
-    "marked": "^0.6.1",
-    "prismjs": "^1.15.0",
-    "prop-types": "^15.6.1",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-emotion": "9.2.4",
-    "react-hot-loader": "4.2.0",
-    "react-modal": "^3.5.1",
-    "react-moment": "^0.7.7",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "4.2.2",
-    "react-router-redux": "^4.0.8",
-    "react-select": "2.0.0",
-    "redux": "^4.0.0",
-    "redux-thunk": "^2.3.0",
-    "slate": "^0.44.10",
-    "slate-html-serializer": "^0.7.34",
-    "slate-react": "^0.21.16"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
   },
-  "devDependencies": {
-    "babel-cli": "6.26.0",
-    "babel-core": "6.26.0",
-    "babel-eslint": "8.2.3",
-    "babel-loader": "7.1.4",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-es2015": "6.24.1",
-    "babel-preset-react": "6.24.1",
-    "babel-preset-react-boilerplate": "1.1.1",
-    "babel-preset-react-hmre": "1.1.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "copy-webpack-plugin": "4.5.1",
-    "css-hot-loader": "1.3.9",
-    "css-loader": "^0.28.11",
-    "eslint": "4.10.0",
-    "eslint-config-react-app": "^2.1.0",
-    "eslint-loader": "1.9.0",
-    "eslint-plugin-flowtype": "2.39.1",
-    "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-jsx-a11y": "5.1.1",
-    "eslint-plugin-react": "7.4.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "prettier": "1.14.0",
-    "extract-text-webpack-plugin": "3.0.2",
-    "file-loader": "1.1.10",
-    "html-webpack-plugin": "3.2.0",
-    "less-loader": "^4.1.0",
-    "node-sass": "^4.9.0",
-    "open-browser-webpack-plugin": "0.0.5",
-    "sass-loader": "^6.0.7",
-    "source-map-loader": "^0.2.3",
-    "style-loader": "0.21.0",
-    "url-loader": "1.0.0",
-    "webpack": "^3.11.0",
-    "webpack-dev-server": "2.9.6"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
